@@ -1,0 +1,133 @@
+version: "3.8"
+
+# Services
+services:
+
+  # Nginx service
+  nginx:
+    image: nginx:1.23.1-alpine
+    ports:
+      - "${NGINX_HOST_HTTP_PORT}:80"
+      - "${NGINX_HOST_HTTPS_PORT}:443"
+    volumes:
+      - ${APP_PATH_HOST}:/var/www/html
+      - ${NGINX_CONFIG_PATH}:/etc/nginx/conf.d
+      - ${NGINX_HOST_LOG_PATH}:/var/log/nginx
+      - ${NGINX_SSL_PATH}:/etc/nginx/ssl
+    depends_on:
+      - php-fpm
+    networks:
+      - frontend
+      - backend
+
+  # PHP-FPM service
+  php-fpm:
+    build: ./docker/php-fpm
+    working_dir: /var/www/html
+    volumes:
+      - ${APP_PATH_HOST}:/var/www/html
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - backend
+
+  # MySQL Service
+  mysql:
+    image: mysql/mysql-server:8.0
+    ports:
+      - "${MYSQL_PORT}:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_DATABASE: default
+    volumes:
+      - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ${DATA_PATH_HOST}/mysql:/var/lib/mysql
+    healthcheck:
+      test: mysqladmin ping -h 127.0.0.1 -u root --password=$$MYSQL_ROOT_PASSWORD
+      interval: 5s
+      retries: 10
+    networks:
+      - backend
+  # Redis
+  redis:
+    build: ./docker/redis
+    volumes:
+      - ${DATA_PATH_HOST}/redis:/data
+    command: --requirepass ${REDIS_PASSWORD}
+    ports:
+      - "${REDIS_PORT}:6379"
+    networks:
+      - backend
+
+  # Redis webUI
+  redis-webui:
+    image: erikdubbelboer/phpredisadmin
+    environment:
+      - ADMIN_USER=${REDIS_WEBUI_USERNAME}
+      - ADMIN_PASS=${REDIS_WEBUI_PASSWORD}
+      - REDIS_1_HOST=${REDIS_WEBUI_CONNECT_HOST}
+      - REDIS_1_PORT=${REDIS_WEBUI_CONNECT_PORT}
+      - REDIS_1_AUTH=${REDIS_WEBUI_CONNECT_PASSWORD}
+    networks:
+      - backend
+    ports:
+      - "${REDIS_WEBUI_PORT}:80"
+    depends_on:
+      - redis
+
+  # POSTGRESQL
+  postgres:
+    image: postgres:14.4-alpine
+    volumes:
+      - ${DATA_PATH_HOST}/postgres:/var/lib/postgresql/data
+      - ${POSTGRES_ENTRYPOINT_INITDB}:/docker-entrypoint-initdb.d
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - SONARQUBE_POSTGRES_INIT=${SONARQUBE_POSTGRES_INIT}
+      - SONARQUBE_POSTGRES_DB=${SONARQUBE_POSTGRES_DB}
+      - SONARQUBE_POSTGRES_USER=${SONARQUBE_POSTGRES_USER}
+      - SONARQUBE_POSTGRES_PASSWORD=${SONARQUBE_POSTGRES_PASSWORD}
+    networks:
+      - backend
+
+  # SONARQUBE
+  sonarqube:
+    image: sonarqube:9.5.0-community
+    hostname: "${SONARQUBE_HOSTNAME}"
+    volumes:
+      - ${DATA_PATH_HOST}/sonarqube/conf:/opt/sonarqube/conf
+      - ${DATA_PATH_HOST}/sonarqube/data:/opt/sonarqube/data
+      - ${DATA_PATH_HOST}/sonarqube/logs:/opt/sonarqube/logs
+      - ${DATA_PATH_HOST}/sonarqube/extensions:/opt/sonarqube/extensions
+      - ${DATA_PATH_HOST}/sonarqube/plugins:/opt/sonarqube/lib/bundled-plugins
+    ports:
+      - ${SONARQUBE_PORT}:9000
+    depends_on:
+      - postgres
+    environment:
+      - sonar.jdbc.username=${SONARQUBE_POSTGRES_USER}
+      - sonar.jdbc.password=${SONARQUBE_POSTGRES_PASSWORD}
+      - sonar.jdbc.url=jdbc:postgresql://${SONARQUBE_POSTGRES_HOST}:5432/${SONARQUBE_POSTGRES_DB}
+    networks:
+      - backend
+      - frontend
+
+  # RabbitMQ
+  # ElasticSearch
+
+# Volumes
+volumes:
+  data:
+
+# Networks
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge

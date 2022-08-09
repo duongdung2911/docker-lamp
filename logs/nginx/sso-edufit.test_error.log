@@ -1,0 +1,2 @@
+2022/08/05 01:38:27 [error] 36#36: *7 open() "/var/www/html/edufit-sso-fe/dist/api/v1/profile" failed (2: No such file or directory), client: 172.21.0.1, server: sso.test, request: "GET /api/v1/profile HTTP/1.1", host: "sso.test", referrer: "https://sso.test/"
+2022/08/05 01:38:50 [error] 32#32: *14 open() "/var/www/html/edufit-sso-fe/dist/api/v1/profile" failed (2: No such file or directory), client: 172.21.0.1, server: sso.test, request: "GET /api/v1/profile HTTP/1.1", host: "sso.test", referrer: "https://sso.test/auth/login/"
