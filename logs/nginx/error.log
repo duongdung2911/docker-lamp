@@ -1581,3 +1581,462 @@
 2022/08/05 02:54:46 [error] 34#34: *91 open() "/var/www/html/api/v1/clients/web/login" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "POST /api/v1/clients/web/login HTTP/1.1", host: "localhost:3001", referrer: "http://localhost:3001/auth/login"
 2022/08/05 02:55:59 [error] 34#34: *92 open() "/var/www/html/api/v1/clients/web/login" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "POST /api/v1/clients/web/login HTTP/1.1", host: "localhost:3001", referrer: "http://localhost:3001/auth/login"
 2022/08/05 02:57:53 [error] 34#34: *95 open() "/var/www/html/api/v1/clients/web/login" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "POST /api/v1/clients/web/login HTTP/1.1", host: "localhost:3001", referrer: "http://localhost:3001/auth/login"
+2022/08/10 01:08:40 [error] 35#35: *2805 open() "/var/www/html/api/totalBadge" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "GET /api/totalBadge HTTP/1.1", host: "lms.local"
+2022/08/10 01:08:45 [error] 35#35: *2805 open() "/var/www/html/api/login" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "POST /api/login HTTP/1.1", host: "lms.local"
+2022/08/10 08:12:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/08/10 08:12:39 [notice] 31#31: gracefully shutting down
+2022/08/10 08:12:39 [notice] 32#32: gracefully shutting down
+2022/08/10 08:12:39 [notice] 36#36: gracefully shutting down
+2022/08/10 08:12:39 [notice] 33#33: gracefully shutting down
+2022/08/10 08:12:39 [notice] 34#34: gracefully shutting down
+2022/08/10 08:12:39 [notice] 31#31: exiting
+2022/08/10 08:12:39 [notice] 35#35: gracefully shutting down
+2022/08/10 08:12:39 [notice] 36#36: exiting
+2022/08/10 08:12:39 [notice] 34#34: exiting
+2022/08/10 08:12:39 [notice] 32#32: exiting
+2022/08/10 08:12:39 [notice] 33#33: exiting
+2022/08/10 08:12:39 [notice] 34#34: exit
+2022/08/10 08:12:39 [notice] 36#36: exit
+2022/08/10 08:12:39 [notice] 35#35: exiting
+2022/08/10 08:12:39 [notice] 33#33: exit
+2022/08/10 08:12:39 [notice] 35#35: exit
+2022/08/10 08:12:39 [notice] 31#31: exit
+2022/08/10 08:12:39 [notice] 32#32: exit
+2022/08/10 08:12:39 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2022/08/10 08:12:39 [notice] 1#1: worker process 36 exited with code 0
+2022/08/10 08:12:39 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/10 08:12:39 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/08/10 08:12:39 [notice] 1#1: worker process 33 exited with code 0
+2022/08/10 08:12:39 [notice] 1#1: worker process 34 exited with code 0
+2022/08/10 08:12:39 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/10 08:12:39 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/08/10 08:12:39 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2022/08/10 08:12:39 [notice] 1#1: worker process 35 exited with code 0
+2022/08/10 08:12:39 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/10 08:12:40 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/08/10 08:12:40 [notice] 1#1: worker process 31 exited with code 0
+2022/08/10 08:12:40 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/10 08:12:40 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/08/10 08:12:40 [notice] 1#1: worker process 32 exited with code 0
+2022/08/10 08:12:40 [notice] 1#1: exit
+2022/08/10 08:12:46 [warn] 1#1: conflicting server name "edufit.local" on 0.0.0.0:80, ignored
+2022/08/10 08:12:46 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/10 08:12:46 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/10 08:12:46 [warn] 1#1: conflicting server name "sso.test" on 0.0.0.0:80, ignored
+2022/08/10 08:12:46 [warn] 1#1: conflicting server name "sso-edufit.test" on [::]:80, ignored
+2022/08/10 08:12:46 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:443, ignored
+2022/08/10 08:12:46 [notice] 1#1: using the "epoll" event method
+2022/08/10 08:12:46 [notice] 1#1: nginx/1.23.1
+2022/08/10 08:12:46 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/08/10 08:12:46 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/08/10 08:12:46 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/10 08:12:46 [notice] 1#1: start worker processes
+2022/08/10 08:12:46 [notice] 1#1: start worker process 31
+2022/08/10 08:12:46 [notice] 1#1: start worker process 32
+2022/08/10 08:12:46 [notice] 1#1: start worker process 33
+2022/08/10 08:12:46 [notice] 1#1: start worker process 34
+2022/08/10 08:12:46 [notice] 1#1: start worker process 35
+2022/08/10 08:12:46 [notice] 1#1: start worker process 36
+2022/08/10 08:14:21 [error] 34#34: *5 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "GET /favicon.ico HTTP/1.1", host: "ssm-edufit.test", referrer: "https://ssm-edufit.test/"
+2022/08/10 08:29:29 [error] 31#31: *11 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "GET /favicon.ico HTTP/1.1", host: "ssm-edufit.test", referrer: "https://ssm-edufit.test/"
+2022/08/10 08:31:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/08/10 08:31:02 [notice] 32#32: gracefully shutting down
+2022/08/10 08:31:02 [notice] 33#33: gracefully shutting down
+2022/08/10 08:31:02 [notice] 35#35: gracefully shutting down
+2022/08/10 08:31:02 [notice] 31#31: gracefully shutting down
+2022/08/10 08:31:02 [notice] 35#35: exiting
+2022/08/10 08:31:02 [notice] 34#34: gracefully shutting down
+2022/08/10 08:31:02 [notice] 34#34: exiting
+2022/08/10 08:31:02 [notice] 36#36: gracefully shutting down
+2022/08/10 08:31:02 [notice] 32#32: exiting
+2022/08/10 08:31:02 [notice] 33#33: exiting
+2022/08/10 08:31:02 [notice] 31#31: exiting
+2022/08/10 08:31:02 [notice] 35#35: exit
+2022/08/10 08:31:02 [notice] 34#34: exit
+2022/08/10 08:31:02 [notice] 36#36: exiting
+2022/08/10 08:31:02 [notice] 32#32: exit
+2022/08/10 08:31:02 [notice] 33#33: exit
+2022/08/10 08:31:02 [notice] 31#31: exit
+2022/08/10 08:31:02 [notice] 36#36: exit
+2022/08/10 08:31:02 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/08/10 08:31:02 [notice] 1#1: worker process 34 exited with code 0
+2022/08/10 08:31:02 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/10 08:31:02 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/08/10 08:31:02 [notice] 1#1: worker process 32 exited with code 0
+2022/08/10 08:31:02 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/10 08:31:02 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/08/10 08:31:02 [notice] 1#1: worker process 31 exited with code 0
+2022/08/10 08:31:02 [notice] 1#1: worker process 33 exited with code 0
+2022/08/10 08:31:02 [notice] 1#1: worker process 35 exited with code 0
+2022/08/10 08:31:02 [notice] 1#1: worker process 36 exited with code 0
+2022/08/10 08:31:02 [notice] 1#1: exit
+2022/08/10 08:31:05 [warn] 1#1: conflicting server name "edufit.local" on 0.0.0.0:80, ignored
+2022/08/10 08:31:05 [warn] 1#1: conflicting server name "ssm-edufit.test" on 0.0.0.0:80, ignored
+2022/08/10 08:31:05 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/10 08:31:05 [warn] 1#1: conflicting server name "sso.test" on 0.0.0.0:80, ignored
+2022/08/10 08:31:05 [notice] 1#1: using the "epoll" event method
+2022/08/10 08:31:05 [notice] 1#1: nginx/1.23.1
+2022/08/10 08:31:05 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/08/10 08:31:05 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/08/10 08:31:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/10 08:31:05 [notice] 1#1: start worker processes
+2022/08/10 08:31:05 [notice] 1#1: start worker process 31
+2022/08/10 08:31:05 [notice] 1#1: start worker process 32
+2022/08/10 08:31:05 [notice] 1#1: start worker process 33
+2022/08/10 08:31:05 [notice] 1#1: start worker process 34
+2022/08/10 08:31:05 [notice] 1#1: start worker process 35
+2022/08/10 08:31:05 [notice] 1#1: start worker process 36
+2022/08/12 16:27:14 [notice] 33#33: signal 15 (SIGTERM) received, exiting
+2022/08/12 16:27:14 [notice] 33#33: exiting
+2022/08/12 16:27:14 [notice] 34#34: signal 15 (SIGTERM) received, exiting
+2022/08/12 16:27:14 [notice] 36#36: signal 15 (SIGTERM) received, exiting
+2022/08/12 16:27:15 [notice] 36#36: exiting
+2022/08/12 16:27:14 [notice] 31#31: signal 15 (SIGTERM) received, exiting
+2022/08/12 16:27:15 [notice] 31#31: exiting
+2022/08/12 16:27:14 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2022/08/12 16:27:14 [notice] 32#32: signal 15 (SIGTERM) received, exiting
+2022/08/12 16:27:15 [notice] 32#32: exiting
+2022/08/12 16:27:14 [notice] 35#35: signal 15 (SIGTERM) received, exiting
+2022/08/12 16:27:15 [notice] 35#35: exiting
+2022/08/12 16:27:15 [notice] 32#32: exit
+2022/08/12 16:27:15 [notice] 35#35: exit
+2022/08/12 16:27:15 [notice] 34#34: exiting
+2022/08/12 16:27:14 [notice] 33#33: exit
+2022/08/12 16:27:15 [notice] 34#34: exit
+2022/08/12 16:27:15 [notice] 36#36: exit
+2022/08/13 06:18:37 [warn] 1#1: conflicting server name "edufit.local" on 0.0.0.0:80, ignored
+2022/08/13 06:18:37 [warn] 1#1: conflicting server name "ssm-edufit.test" on 0.0.0.0:80, ignored
+2022/08/13 06:18:37 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/13 06:18:37 [warn] 1#1: conflicting server name "sso.test" on 0.0.0.0:80, ignored
+2022/08/13 06:18:37 [notice] 1#1: using the "epoll" event method
+2022/08/13 06:18:37 [notice] 1#1: nginx/1.23.1
+2022/08/13 06:18:37 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/08/13 06:18:37 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/08/13 06:18:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/13 06:18:37 [notice] 1#1: start worker processes
+2022/08/13 06:18:37 [notice] 1#1: start worker process 30
+2022/08/13 06:18:37 [notice] 1#1: start worker process 31
+2022/08/13 06:18:37 [notice] 1#1: start worker process 32
+2022/08/13 06:18:37 [notice] 1#1: start worker process 33
+2022/08/13 06:18:37 [notice] 1#1: start worker process 34
+2022/08/13 06:18:37 [notice] 1#1: start worker process 35
+2022/08/14 13:28:14 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/08/14 13:28:14 [notice] 31#31: gracefully shutting down
+2022/08/14 13:28:14 [notice] 32#32: gracefully shutting down
+2022/08/14 13:28:14 [notice] 31#31: exiting
+2022/08/14 13:28:14 [notice] 33#33: gracefully shutting down
+2022/08/14 13:28:14 [notice] 32#32: exiting
+2022/08/14 13:28:14 [notice] 30#30: gracefully shutting down
+2022/08/14 13:28:14 [notice] 35#35: gracefully shutting down
+2022/08/14 13:28:14 [notice] 34#34: gracefully shutting down
+2022/08/14 13:28:14 [notice] 30#30: exiting
+2022/08/14 13:28:14 [notice] 34#34: exiting
+2022/08/14 13:28:14 [notice] 33#33: exiting
+2022/08/14 13:28:14 [notice] 35#35: exiting
+2022/08/14 13:28:14 [notice] 32#32: exit
+2022/08/14 13:28:14 [notice] 31#31: exit
+2022/08/14 13:28:14 [notice] 35#35: exit
+2022/08/14 13:28:14 [notice] 30#30: exit
+2022/08/14 13:28:14 [notice] 34#34: exit
+2022/08/14 13:28:14 [notice] 33#33: exit
+2022/08/14 13:28:14 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/08/14 13:28:14 [notice] 1#1: worker process 30 exited with code 0
+2022/08/14 13:28:14 [notice] 1#1: worker process 31 exited with code 0
+2022/08/14 13:28:14 [notice] 1#1: worker process 32 exited with code 0
+2022/08/14 13:28:14 [notice] 1#1: worker process 33 exited with code 0
+2022/08/14 13:28:14 [notice] 1#1: worker process 34 exited with code 0
+2022/08/14 13:28:14 [notice] 1#1: worker process 35 exited with code 0
+2022/08/14 13:28:14 [notice] 1#1: exit
+2022/08/15 01:09:00 [warn] 1#1: conflicting server name "edufit.local" on 0.0.0.0:80, ignored
+2022/08/15 01:09:00 [warn] 1#1: conflicting server name "ssm-edufit.test" on 0.0.0.0:80, ignored
+2022/08/15 01:09:00 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/15 01:09:00 [warn] 1#1: conflicting server name "sso.test" on 0.0.0.0:80, ignored
+2022/08/15 01:09:00 [notice] 1#1: using the "epoll" event method
+2022/08/15 01:09:00 [notice] 1#1: nginx/1.23.1
+2022/08/15 01:09:00 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/08/15 01:09:00 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/08/15 01:09:00 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/15 01:09:00 [notice] 1#1: start worker processes
+2022/08/15 01:09:00 [notice] 1#1: start worker process 31
+2022/08/15 01:09:00 [notice] 1#1: start worker process 32
+2022/08/15 01:09:00 [notice] 1#1: start worker process 33
+2022/08/15 01:09:00 [notice] 1#1: start worker process 34
+2022/08/15 01:09:00 [notice] 1#1: start worker process 35
+2022/08/15 01:09:00 [notice] 1#1: start worker process 36
+2022/08/16 07:02:14 [warn] 1#1: conflicting server name "edufit.local" on 0.0.0.0:80, ignored
+2022/08/16 07:02:14 [warn] 1#1: conflicting server name "ssm-edufit.test" on 0.0.0.0:80, ignored
+2022/08/16 07:02:14 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/16 07:02:14 [warn] 1#1: conflicting server name "sso.test" on 0.0.0.0:80, ignored
+2022/08/16 07:02:14 [notice] 1#1: using the "epoll" event method
+2022/08/16 07:02:14 [notice] 1#1: nginx/1.23.1
+2022/08/16 07:02:14 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/08/16 07:02:14 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/08/16 07:02:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/16 07:02:14 [notice] 1#1: start worker processes
+2022/08/16 07:02:14 [notice] 1#1: start worker process 31
+2022/08/16 07:02:14 [notice] 1#1: start worker process 32
+2022/08/16 07:02:14 [notice] 1#1: start worker process 33
+2022/08/16 07:02:14 [notice] 1#1: start worker process 34
+2022/08/16 07:02:14 [notice] 1#1: start worker process 35
+2022/08/16 07:02:14 [notice] 1#1: start worker process 36
+2022/08/18 01:14:05 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/08/18 01:14:05 [notice] 34#34: gracefully shutting down
+2022/08/18 01:14:05 [notice] 32#32: gracefully shutting down
+2022/08/18 01:14:05 [notice] 36#36: gracefully shutting down
+2022/08/18 01:14:05 [notice] 33#33: gracefully shutting down
+2022/08/18 01:14:05 [notice] 35#35: gracefully shutting down
+2022/08/18 01:14:05 [notice] 33#33: exiting
+2022/08/18 01:14:05 [notice] 34#34: exiting
+2022/08/18 01:14:05 [notice] 31#31: gracefully shutting down
+2022/08/18 01:14:05 [notice] 32#32: exiting
+2022/08/18 01:14:05 [notice] 36#36: exiting
+2022/08/18 01:14:05 [notice] 35#35: exiting
+2022/08/18 01:14:05 [notice] 32#32: exit
+2022/08/18 01:14:05 [notice] 34#34: exit
+2022/08/18 01:14:05 [notice] 36#36: exit
+2022/08/18 01:14:05 [notice] 33#33: exit
+2022/08/18 01:14:05 [notice] 35#35: exit
+2022/08/18 01:14:05 [notice] 31#31: exiting
+2022/08/18 01:14:05 [notice] 31#31: exit
+2022/08/18 01:14:05 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2022/08/18 01:14:05 [notice] 1#1: worker process 32 exited with code 0
+2022/08/18 01:14:05 [notice] 1#1: worker process 33 exited with code 0
+2022/08/18 01:14:05 [notice] 1#1: worker process 35 exited with code 0
+2022/08/18 01:14:05 [notice] 1#1: worker process 36 exited with code 0
+2022/08/18 01:14:05 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/18 01:14:05 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/08/18 01:14:05 [notice] 1#1: worker process 34 exited with code 0
+2022/08/18 01:14:05 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/18 01:14:05 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/08/18 01:14:05 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/08/18 01:14:05 [notice] 1#1: worker process 31 exited with code 0
+2022/08/18 01:14:05 [notice] 1#1: exit
+2022/08/18 04:47:56 [warn] 1#1: conflicting server name "edufit.local" on 0.0.0.0:80, ignored
+2022/08/18 04:47:56 [warn] 1#1: conflicting server name "ssm-edufit.test" on 0.0.0.0:80, ignored
+2022/08/18 04:47:56 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/18 04:47:56 [warn] 1#1: conflicting server name "sso.test" on 0.0.0.0:80, ignored
+2022/08/18 04:47:56 [notice] 1#1: using the "epoll" event method
+2022/08/18 04:47:56 [notice] 1#1: nginx/1.23.1
+2022/08/18 04:47:56 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/08/18 04:47:56 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/08/18 04:47:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/18 04:47:56 [notice] 1#1: start worker processes
+2022/08/18 04:47:56 [notice] 1#1: start worker process 31
+2022/08/18 04:47:56 [notice] 1#1: start worker process 32
+2022/08/18 04:47:56 [notice] 1#1: start worker process 33
+2022/08/18 04:47:56 [notice] 1#1: start worker process 34
+2022/08/18 04:47:56 [notice] 1#1: start worker process 35
+2022/08/18 04:47:56 [notice] 1#1: start worker process 36
+2022/08/22 01:51:52 [warn] 1#1: conflicting server name "edufit.local" on 0.0.0.0:80, ignored
+2022/08/22 01:51:52 [warn] 1#1: conflicting server name "ssm-edufit.test" on 0.0.0.0:80, ignored
+2022/08/22 01:51:52 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/22 01:51:52 [warn] 1#1: conflicting server name "sso.test" on 0.0.0.0:80, ignored
+2022/08/22 01:51:52 [notice] 1#1: using the "epoll" event method
+2022/08/22 01:51:52 [notice] 1#1: nginx/1.23.1
+2022/08/22 01:51:52 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/08/22 01:51:52 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/08/22 01:51:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/22 01:51:52 [notice] 1#1: start worker processes
+2022/08/22 01:51:52 [notice] 1#1: start worker process 31
+2022/08/22 01:51:52 [notice] 1#1: start worker process 32
+2022/08/22 01:51:52 [notice] 1#1: start worker process 33
+2022/08/22 01:51:52 [notice] 1#1: start worker process 34
+2022/08/22 01:51:52 [notice] 1#1: start worker process 35
+2022/08/22 01:51:52 [notice] 1#1: start worker process 36
+2022/08/22 10:00:54 [error] 36#36: *359 open() "/var/www/html/api/login" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "POST /api/login HTTP/1.1", host: "lms.local"
+2022/08/22 10:01:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/08/22 10:01:02 [notice] 31#31: gracefully shutting down
+2022/08/22 10:01:02 [notice] 32#32: gracefully shutting down
+2022/08/22 10:01:02 [notice] 33#33: gracefully shutting down
+2022/08/22 10:01:02 [notice] 35#35: gracefully shutting down
+2022/08/22 10:01:02 [notice] 36#36: gracefully shutting down
+2022/08/22 10:01:02 [notice] 34#34: gracefully shutting down
+2022/08/22 10:01:02 [notice] 33#33: exiting
+2022/08/22 10:01:02 [notice] 32#32: exiting
+2022/08/22 10:01:02 [notice] 35#35: exiting
+2022/08/22 10:01:02 [notice] 31#31: exiting
+2022/08/22 10:01:02 [notice] 36#36: exiting
+2022/08/22 10:01:02 [notice] 34#34: exiting
+2022/08/22 10:01:02 [notice] 35#35: exit
+2022/08/22 10:01:02 [notice] 33#33: exit
+2022/08/22 10:01:02 [notice] 36#36: exit
+2022/08/22 10:01:02 [notice] 32#32: exit
+2022/08/22 10:01:02 [notice] 31#31: exit
+2022/08/22 10:01:02 [notice] 34#34: exit
+2022/08/22 10:01:02 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2022/08/22 10:01:02 [notice] 1#1: worker process 33 exited with code 0
+2022/08/22 10:01:02 [notice] 1#1: worker process 35 exited with code 0
+2022/08/22 10:01:02 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/22 10:01:02 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2022/08/22 10:01:02 [notice] 1#1: worker process 36 exited with code 0
+2022/08/22 10:01:02 [notice] 1#1: worker process 31 exited with code 0
+2022/08/22 10:01:02 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/22 10:01:02 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/08/22 10:01:02 [notice] 1#1: worker process 32 exited with code 0
+2022/08/22 10:01:02 [notice] 1#1: worker process 34 exited with code 0
+2022/08/22 10:01:02 [notice] 1#1: exit
+2022/08/22 14:38:06 [warn] 1#1: conflicting server name "edufit.local" on 0.0.0.0:80, ignored
+2022/08/22 14:38:06 [warn] 1#1: conflicting server name "ssm-edufit.test" on 0.0.0.0:80, ignored
+2022/08/22 14:38:06 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/22 14:38:06 [warn] 1#1: conflicting server name "sso.test" on 0.0.0.0:80, ignored
+2022/08/22 14:38:06 [notice] 1#1: using the "epoll" event method
+2022/08/22 14:38:06 [notice] 1#1: nginx/1.23.1
+2022/08/22 14:38:06 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/08/22 14:38:06 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/08/22 14:38:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/22 14:38:06 [notice] 1#1: start worker processes
+2022/08/22 14:38:06 [notice] 1#1: start worker process 32
+2022/08/22 14:38:06 [notice] 1#1: start worker process 33
+2022/08/22 14:38:06 [notice] 1#1: start worker process 34
+2022/08/22 14:38:06 [notice] 1#1: start worker process 35
+2022/08/22 14:38:06 [notice] 1#1: start worker process 36
+2022/08/22 14:38:06 [notice] 1#1: start worker process 37
+2022/08/23 02:28:08 [error] 37#37: *235 open() "/var/www/html/api/v2/attendance" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "GET /api/v2/attendance?date=22/08/2022 HTTP/1.1", host: "lms.local"
+2022/08/23 02:28:35 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/08/23 02:28:35 [notice] 35#35: gracefully shutting down
+2022/08/23 02:28:35 [notice] 32#32: gracefully shutting down
+2022/08/23 02:28:35 [notice] 37#37: gracefully shutting down
+2022/08/23 02:28:35 [notice] 36#36: gracefully shutting down
+2022/08/23 02:28:35 [notice] 33#33: gracefully shutting down
+2022/08/23 02:28:35 [notice] 34#34: gracefully shutting down
+2022/08/23 02:28:35 [notice] 35#35: exiting
+2022/08/23 02:28:35 [notice] 37#37: exiting
+2022/08/23 02:28:35 [notice] 33#33: exiting
+2022/08/23 02:28:35 [notice] 36#36: exiting
+2022/08/23 02:28:35 [notice] 32#32: exiting
+2022/08/23 02:28:35 [notice] 34#34: exiting
+2022/08/23 02:28:35 [notice] 35#35: exit
+2022/08/23 02:28:35 [notice] 36#36: exit
+2022/08/23 02:28:35 [notice] 37#37: exit
+2022/08/23 02:28:35 [notice] 33#33: exit
+2022/08/23 02:28:35 [notice] 34#34: exit
+2022/08/23 02:28:35 [notice] 32#32: exit
+2022/08/23 02:28:35 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2022/08/23 02:28:35 [notice] 1#1: worker process 35 exited with code 0
+2022/08/23 02:28:35 [notice] 1#1: worker process 36 exited with code 0
+2022/08/23 02:28:35 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/23 02:28:35 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2022/08/23 02:28:35 [notice] 1#1: worker process 37 exited with code 0
+2022/08/23 02:28:35 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/23 02:28:35 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/08/23 02:28:35 [notice] 1#1: worker process 34 exited with code 0
+2022/08/23 02:28:35 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/23 02:28:35 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/08/23 02:28:35 [notice] 1#1: worker process 32 exited with code 0
+2022/08/23 02:28:35 [notice] 1#1: worker process 33 exited with code 0
+2022/08/23 02:28:35 [notice] 1#1: exit
+2022/08/23 07:40:43 [warn] 1#1: conflicting server name "edufit.local" on 0.0.0.0:80, ignored
+2022/08/23 07:40:43 [warn] 1#1: conflicting server name "ssm-edufit.test" on 0.0.0.0:80, ignored
+2022/08/23 07:40:43 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/23 07:40:43 [warn] 1#1: conflicting server name "sso.test" on 0.0.0.0:80, ignored
+2022/08/23 07:40:43 [notice] 1#1: using the "epoll" event method
+2022/08/23 07:40:43 [notice] 1#1: nginx/1.23.1
+2022/08/23 07:40:43 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/08/23 07:40:43 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/08/23 07:40:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/23 07:40:43 [notice] 1#1: start worker processes
+2022/08/23 07:40:43 [notice] 1#1: start worker process 31
+2022/08/23 07:40:43 [notice] 1#1: start worker process 32
+2022/08/23 07:40:43 [notice] 1#1: start worker process 33
+2022/08/23 07:40:43 [notice] 1#1: start worker process 34
+2022/08/23 07:40:43 [notice] 1#1: start worker process 35
+2022/08/23 07:40:43 [notice] 1#1: start worker process 36
+2022/08/24 10:29:30 [error] 32#32: *820 open() "/var/www/html/api/getDetailBus" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "GET /api/getDetailBus?childId=35863 HTTP/1.1", host: "lms.local"
+2022/08/24 10:29:59 [error] 32#32: *820 open() "/var/www/html/api/getDetailBus" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "GET /api/getDetailBus?childId=35863 HTTP/1.1", host: "lms.local"
+2022/08/24 10:30:04 [error] 32#32: *820 open() "/var/www/html/api/getDetailBus" failed (2: No such file or directory), client: 192.168.112.1, server: edufit.local, request: "GET /api/getDetailBus?childId=35863 HTTP/1.1", host: "lms.local"
+2022/08/24 10:31:07 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/08/24 10:31:07 [notice] 31#31: gracefully shutting down
+2022/08/24 10:31:07 [notice] 33#33: gracefully shutting down
+2022/08/24 10:31:07 [notice] 32#32: gracefully shutting down
+2022/08/24 10:31:07 [notice] 34#34: gracefully shutting down
+2022/08/24 10:31:07 [notice] 35#35: gracefully shutting down
+2022/08/24 10:31:07 [notice] 36#36: gracefully shutting down
+2022/08/24 10:31:07 [notice] 31#31: exiting
+2022/08/24 10:31:07 [notice] 34#34: exiting
+2022/08/24 10:31:07 [notice] 33#33: exiting
+2022/08/24 10:31:07 [notice] 36#36: exiting
+2022/08/24 10:31:07 [notice] 32#32: exiting
+2022/08/24 10:31:07 [notice] 35#35: exiting
+2022/08/24 10:31:07 [notice] 35#35: exit
+2022/08/24 10:31:07 [notice] 31#31: exit
+2022/08/24 10:31:07 [notice] 34#34: exit
+2022/08/24 10:31:07 [notice] 33#33: exit
+2022/08/24 10:31:07 [notice] 36#36: exit
+2022/08/24 10:31:07 [notice] 32#32: exit
+2022/08/24 10:31:07 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/08/24 10:31:07 [notice] 1#1: worker process 34 exited with code 0
+2022/08/24 10:31:07 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/24 10:31:07 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/08/24 10:31:07 [notice] 1#1: worker process 31 exited with code 0
+2022/08/24 10:31:07 [notice] 1#1: worker process 32 exited with code 0
+2022/08/24 10:31:07 [notice] 1#1: worker process 33 exited with code 0
+2022/08/24 10:31:07 [notice] 1#1: worker process 35 exited with code 0
+2022/08/24 10:31:07 [notice] 1#1: worker process 36 exited with code 0
+2022/08/24 10:31:07 [notice] 1#1: exit
+2022/08/25 01:40:01 [warn] 1#1: conflicting server name "edufit.local" on 0.0.0.0:80, ignored
+2022/08/25 01:40:01 [warn] 1#1: conflicting server name "ssm-edufit.test" on 0.0.0.0:80, ignored
+2022/08/25 01:40:01 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/25 01:40:01 [warn] 1#1: conflicting server name "sso.test" on 0.0.0.0:80, ignored
+2022/08/25 01:40:01 [notice] 1#1: using the "epoll" event method
+2022/08/25 01:40:01 [notice] 1#1: nginx/1.23.1
+2022/08/25 01:40:01 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/08/25 01:40:01 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/08/25 01:40:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/25 01:40:01 [notice] 1#1: start worker processes
+2022/08/25 01:40:01 [notice] 1#1: start worker process 31
+2022/08/25 01:40:01 [notice] 1#1: start worker process 32
+2022/08/25 01:40:01 [notice] 1#1: start worker process 33
+2022/08/25 01:40:01 [notice] 1#1: start worker process 34
+2022/08/25 01:40:01 [notice] 1#1: start worker process 35
+2022/08/25 01:40:01 [notice] 1#1: start worker process 36
+2022/08/25 03:04:15 [error] 32#32: *112 open() "/var/www/html/api/v1/contact" failed (2: No such file or directory), client: 172.21.0.1, server: edufit.local, request: "GET /api/v1/contact?type=0&start=0&limit=10&search= HTTP/1.1", host: "teacher-api.local"
+2022/08/29 15:29:19 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/08/29 15:29:19 [notice] 31#31: gracefully shutting down
+2022/08/29 15:29:19 [notice] 32#32: gracefully shutting down
+2022/08/29 15:29:19 [notice] 34#34: gracefully shutting down
+2022/08/29 15:29:19 [notice] 35#35: gracefully shutting down
+2022/08/29 15:29:19 [notice] 33#33: gracefully shutting down
+2022/08/29 15:29:19 [notice] 36#36: gracefully shutting down
+2022/08/29 15:29:19 [notice] 31#31: exiting
+2022/08/29 15:29:19 [notice] 33#33: exiting
+2022/08/29 15:29:19 [notice] 32#32: exiting
+2022/08/29 15:29:19 [notice] 34#34: exiting
+2022/08/29 15:29:19 [notice] 34#34: exit
+2022/08/29 15:29:19 [notice] 35#35: exiting
+2022/08/29 15:29:19 [notice] 36#36: exiting
+2022/08/29 15:29:19 [notice] 33#33: exit
+2022/08/29 15:29:19 [notice] 35#35: exit
+2022/08/29 15:29:19 [notice] 36#36: exit
+2022/08/29 15:29:19 [notice] 31#31: exit
+2022/08/29 15:29:19 [notice] 32#32: exit
+2022/08/29 15:29:19 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2022/08/29 15:29:19 [notice] 1#1: worker process 33 exited with code 0
+2022/08/29 15:29:19 [notice] 1#1: worker process 34 exited with code 0
+2022/08/29 15:29:19 [notice] 1#1: worker process 35 exited with code 0
+2022/08/29 15:29:19 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/29 15:29:19 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/08/29 15:29:19 [notice] 1#1: worker process 31 exited with code 0
+2022/08/29 15:29:19 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/29 15:29:19 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/08/29 15:29:19 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2022/08/29 15:29:19 [notice] 1#1: worker process 36 exited with code 0
+2022/08/29 15:29:19 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/29 15:29:19 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/08/29 15:29:19 [notice] 1#1: worker process 32 exited with code 0
+2022/08/29 15:29:19 [notice] 1#1: exit
+2022/08/30 02:15:52 [warn] 1#1: conflicting server name "edufit.local" on 0.0.0.0:80, ignored
+2022/08/30 02:15:52 [warn] 1#1: conflicting server name "ssm-edufit.test" on 0.0.0.0:80, ignored
+2022/08/30 02:15:52 [warn] 1#1: conflicting server name "sso-edufit.test" on 0.0.0.0:80, ignored
+2022/08/30 02:15:52 [warn] 1#1: conflicting server name "sso.test" on 0.0.0.0:80, ignored
+2022/08/30 02:15:52 [notice] 1#1: using the "epoll" event method
+2022/08/30 02:15:52 [notice] 1#1: nginx/1.23.1
+2022/08/30 02:15:52 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/08/30 02:15:52 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/08/30 02:15:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/30 02:15:52 [notice] 1#1: start worker processes
+2022/08/30 02:15:52 [notice] 1#1: start worker process 31
+2022/08/30 02:15:52 [notice] 1#1: start worker process 32
+2022/08/30 02:15:52 [notice] 1#1: start worker process 33
+2022/08/30 02:15:52 [notice] 1#1: start worker process 34
+2022/08/30 02:15:52 [notice] 1#1: start worker process 35
+2022/08/30 02:15:52 [notice] 1#1: start worker process 36
